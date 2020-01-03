@@ -1,0 +1,46 @@
+package com.kaan.javabasics;
+
+public class Loops {
+
+    public static void main(String[] args) {
+
+
+        // for loop
+
+        int[] myNumbers = {12, 15, 18, 21, 24};
+
+        //int x = myNumbers[0] / 3 * 5;
+
+        //System.out.println(x);
+
+        for (int i = 0; i < myNumbers.length; i++){
+
+            int x = myNumbers[i] / 3 * 5;
+            //System.out.println(x);
+        }
+
+        for (int number : myNumbers) {
+            //dizinin içindeki numberları alıp number'a eşitler, i'ye gerek yok.
+
+           // System.out.println(number / 3 * 5);
+            //aynı iş, 2 satırla halledildi.
+        }
+
+        for (int a = 0; a < 10; a++) {
+            int b = a * 10;
+            //System.out.println(b);
+        }
+
+
+        //while
+
+        int j = 0;
+
+        while(j<10){
+            int k = j*10;
+            System.out.println(k);
+            j++;
+        }
+
+    }
+}
