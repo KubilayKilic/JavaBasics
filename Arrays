@@ -1,0 +1,83 @@
+package com.kaan.javabasics;
+
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class Arrays {
+
+    public static  void main(String[] args){
+
+        //Array
+
+        String[] myStringArray = new String[4];
+
+        myStringArray[0] = "Rick";
+        myStringArray[1] = "Jerry";
+        myStringArray[2] = "Morty";
+        myStringArray[3] = "Beth";
+
+        System.out.println(myStringArray[0]);
+
+
+        int[] myIntegerArray = new int[4];
+        myIntegerArray[0] = 70;
+        myIntegerArray[1] = 40;
+        myIntegerArray[2] = 15;
+        myIntegerArray[3] = 35;
+
+        System.out.println(myIntegerArray[0]);
+
+        int[] myNumberArray = {1,2,3,4,5,6,7,8,9};
+        System.out.println(myNumberArray[7]);
+
+        //Lists
+
+        ArrayList<String> myShow = new ArrayList<String>();
+
+        myShow.add("Jerry");
+        myShow.add("Jessica");
+        myShow.add(0,"Boromir");
+        myShow.add(1,"Faramir");
+
+        System.out.println(myShow.get(0));
+        System.out.println(myShow.get(1));
+        System.out.println(myShow.get(2));
+        System.out.println(myShow.get(3));
+
+        System.out.println(myShow.size());
+
+        //Set tek eleman barındırır.
+
+        HashSet<String> mySet = new HashSet<String>();
+
+        mySet.add("Boromir");
+        mySet.add("Boromir");
+        mySet.add("Boromir");
+
+        System.out.println(mySet.size());
+
+
+        //HashMap
+
+        HashMap<String, String> myHashMap = new HashMap<>();
+
+        myHashMap.put("name", "Rick");
+        myHashMap.put("surname", "Sanchez");
+
+        System.out.println(myHashMap.get("name"));
+        System.out.println(myHashMap.get("surname"));
+
+        HashMap<String, Integer> myHMap = new HashMap<>();
+
+        myHMap.put("run",100);
+        myHMap.put("football",300);
+
+        System.out.println(myHMap.get("football"));
+
+
+
+    }
+
+}
