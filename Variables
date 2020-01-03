@@ -1,0 +1,70 @@
+package com.kaan.javabasics;
+
+public class Variables {
+
+    public static void main(String [] args){
+
+        //Variables - değişkenler
+
+        //Integer32 - tamsayı - Long64
+
+        int age = 20;
+
+        System.out.println(10*age);
+        System.out.println(age/5);
+
+        int x = 5;
+        int y = 11;
+        System.out.println(y/x);
+
+        long t = 10;
+        System.out.println(t/5);
+
+        //Double64 - Float32
+
+        double z = 5.0;
+        double a = 11.0;
+        System.out.println(a/z);
+
+        float u = 10.0f;
+        System.out.println(u/4);
+
+        double pi = 3.1415;
+        int r = 5;
+
+        //dairenin çevresi = 2.pi.r
+        System.out.println(2*pi*r);
+
+        //String
+
+        String name = "Rick";
+        String name2 = "Morty";
+
+        String names = name + " and " + name2;
+
+        System.out.println(name);
+        System.out.println(name2);
+        System.out.println(names);
+
+        //Boolean true - false
+
+        boolean isAlive = true;
+        isAlive = false;
+        System.out.println(isAlive);
+
+
+        //Final
+        //int başına final gelirse son değer o olur, değişmez.
+
+        int myint = 5;
+        System.out.println("myint: " + myint);
+
+        myint = 6;
+
+        System.out.println("myint: " + myint);
+
+
+
+    }
+
+}
